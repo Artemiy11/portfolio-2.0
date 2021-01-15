@@ -1,0 +1,31 @@
+.circuitry {
+    min-height: 454px;
+    background-color: #f3f3f3;
+    padding: 50px 0 45px 0;
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+    &__item {
+        margin-top: 26px;
+        &_icon {
+            display: block;
+            margin: 0 auto;
+        }
+        &_header {
+            margin-top: 7px;
+            text-align: center;
+            color: $main-color;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        &_text {
+            margin-top: 4px;
+            text-align: center;
+            color: #3a3a3a;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 20px;
+        }
+    }
+}

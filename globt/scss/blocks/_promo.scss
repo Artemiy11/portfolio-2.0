@@ -1,0 +1,155 @@
+.promo {
+    background-color: red;
+    position: relative;
+    min-height: 680px;
+    padding: 23px 0 82px 0;
+    background: url('../img/promo.jpg') center (center / cover) no-repeat;
+    &__phone_menu {
+        position: relative;
+        display: none;
+        height: 55px;
+        background-color: $main-color;
+        padding: 5px 5px;
+        .hamburger {
+            display: none;
+        }
+        &_icon {
+            width: 45px;
+            height: 45px;
+        }
+    }
+    
+    &__global_opt {
+        text-align: center;
+        margin: 0;
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 300;
+    }
+    &__header {
+        text-align: center;
+        line-height: 1;
+        margin-top: 5px;
+        margin-bottom: 0;
+        color: $main-color;
+        font-size: 72px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__subheader {
+        text-align: center;
+        color: #ffffff;
+        font-size: 42px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+    &__wrapper {
+        margin: 0 auto;
+        margin-top: 35px;
+        width: 810px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        hr {
+            display: block;
+            width: 390px;
+        }
+        div {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: #ffffff;
+        }
+    }
+    .row {
+        display: inline-flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    &__icon {
+        width: 285px;
+        text-align: center;
+        margin-top: 35px;
+        img {
+            height: 50px;
+        }
+        &_text {
+            margin-top: 15px;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 22px;
+        }
+    }
+
+    .header_active {
+        display: none;
+        z-index: 1;
+        position: fixed;
+        width: 70%;
+        height: 100%;
+        background-color: rgba($main-color, 0.6);
+        transition: 1s all;
+    }
+    
+    .header {
+        display: inline-flex;
+        align-items: center;
+        &__tel {
+            display: none;
+        }
+        &__icon {
+            margin-right: 55px;
+        }
+        &__menu {
+            width: 590px;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 50px;
+            padding: 0;
+            margin-bottom: 0;
+            a {
+                color: #ffffff;
+                &:hover {
+                    color: $main-color;
+                }
+            }
+        }
+        li {
+            display: inline-block;
+            padding-right: 13px;
+            border-right: 1px dotted;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 400;
+            &:last-child {
+                border-right: 0;
+                padding: 0;
+            }
+        }
+        &__contacts {
+            margin-right: 20px;
+        }
+        &__question {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 18px;
+        }
+        &__phone {
+            color: #ffffff;
+            font-size: 19px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+        .button {
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 22px;
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@media (max-width: 576px) {
+    .promo {
+        &__dev {
+            font-size: 33px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+    }
+}

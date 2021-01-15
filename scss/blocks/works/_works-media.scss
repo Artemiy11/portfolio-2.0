@@ -1,0 +1,37 @@
+@media (max-width: 1200px) {
+    .works {
+        &__wrapper {
+            grid-template: repeat(2, 300px)/repeat(3, 1fr);
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .works {
+        &__wrapper {
+            grid-template: repeat(3, 300px) / repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .works {
+        &__wrapper {
+            padding: 0 20px;
+            grid-template: repeat(3, 300px) / repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .works {
+        &__wrapper {
+            padding: 0;
+            grid-template: repeat(6, 200px) / 1fr;
+            row-gap: 0;
+        }
+        .container {
+            padding: 0;
+        }
+    }
+}

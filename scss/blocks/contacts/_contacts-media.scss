@@ -1,0 +1,11 @@
+@media (max-width: 576px) {
+    .contacts {
+        &__title {
+            font-size: 27px;
+        }
+        &__form {
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.about {
+    position: relative;
+    padding: 70px 0 80px 0;
+    min-height: 1050px;
+    &:before {
+        content: '';
+        box-shadow: none;
+        position: absolute;
+    }
+    &__features {
+        margin-top: 90px;
+        width: 100%;
+        display: grid;
+        grid-template: 1fr / repeat(3, 1fr);
+        column-gap: 20px;
+    }
+    &__feature {
+        width: 300px;
+        justify-self: center;
+        .title {
+            font-size: 28px;
+        }
+        .wrapper {
+            margin: 0 auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            background-color: $third-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 70%;
+                height: 70%;
+            }
+        }
+        .title, .descr {
+            color: $text-color;
+            text-align: center;
+        }
+    }
+    &__inf {
+        position: relative;
+        margin: 0 auto;
+        margin-top: 80px;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 400px 565px;
+        column-gap: 40px;
+        .me {
+            width: 400px;
+            &_img {
+                display: block;
+                margin: 0 auto;
+                width: 300px;
+                height: 300px;
+                border-radius: 100%;
+                object-fit: cover;
+            }
+            &_title {
+                text-align: center;
+
+            }
+            &_descr {
+                text-align: center;
+            }
+        }
+        .skills {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &_item {
+                position: relative;
+                width: 445px;
+                height: 28px;
+                background-color: #eee;
+                margin-left: 120px;
+            }
+            &_name {
+                position: absolute;
+                top: 0;
+                left: -120px;
+                background-color: $third-color;
+                width: 120px;
+                height: 28px;
+                color: #fff;
+                font-weight: 700;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &_item-active {
+                height: 100%;
+                width: 0%;
+                background-color:  #00a1a7;
+                transition: 2s all;
+            }
+            &_percent {
+                position: absolute;
+                width: 35px;
+                height: 28px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 0;
+                right: 0;
+                background-color: #eee;
+            }
+        }
+    }
+}

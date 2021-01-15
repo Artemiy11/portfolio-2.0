@@ -1,0 +1,141 @@
+.prices {
+    min-height: 952px;
+    padding: 53px 0 58px 0;
+    &__items {
+        margin-top: 34px;
+        &_item {
+            padding: 3px 3px 0 3px;
+            width: 265px;
+            height: 355px;
+            border: 1px solid #e9e9e9;
+            &_header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 61px;
+                background-color: #25333c;
+                &_text {
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 23px;
+                text-transform: uppercase;
+                }
+            }
+            .information {
+                padding-right: 14px;
+                padding-left: 14px;
+            }
+            &_icon {
+                height: 55px;
+                width: 55px;
+                display: block;
+                margin: 0 auto;
+                margin-top: 14px;
+            }
+            &_time {
+                text-align: center;
+                margin-top: 12px;
+                color: #2e2e2e;
+                font-size: 14px;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+            &_price {
+                text-align: center;
+                color: #ec644b;
+                font-size: 28px;
+                line-height: 30px;
+            }
+            &_descr {
+                text-align: center;
+                margin-top: 15px;
+                color: #2e2e2e;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 20px;
+            }
+        }
+    }
+    &__consultation {
+        width: 1140px;
+        height: 166px;
+        margin: 0 auto;
+        margin-top: 70px;
+        position: relative;
+        &_bottom_left {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            right: 0;
+            border-bottom: 1px solid #898989;
+            width: 465px;
+            z-index: -1;
+        }
+        &_bottom_right {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 0;
+            border-bottom: 1px solid #898989;
+            width: 465px;
+            z-index: -1;
+        }
+        &:after {
+            position: absolute;
+            content: '';
+            top:0;
+            right:0;
+            width:510px;
+            border-top: 1px solid #898989;
+            border-right: 1px solid #898989;
+            height: 166px;
+            z-index: -1;
+        }
+        &:before {
+            position: absolute;
+            content: '';
+            top:0;
+            left:0;
+            width:510px;
+            border-top:1px solid #898989;
+            border-left: 1px solid #898989;
+            height: 166px;
+            z-index: -1;
+        }
+        &_circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 102px;
+            height: 102px;
+            border: 1px solid $main-color;
+            border-radius: 100%;
+            position: absolute;
+            top: -55px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &_text {
+            margin-top: 56px;
+            text-align: center;
+            color: #3a3a3a;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 23px;
+        }
+        .feed-form {
+            position: absolute;
+            bottom: -20px;
+            right: 14%;
+        }
+        input {
+            padding-left: 30px;
+            width: 270px;
+            height: 47px;
+            border-radius: 30px;
+            border: 1px solid #dfdfdf;
+            margin-bottom: 25px;
+        }
+    }
+}

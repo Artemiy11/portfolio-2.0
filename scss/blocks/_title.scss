@@ -1,0 +1,44 @@
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    &_main {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: 700;
+        color: #444649;
+    }
+    &_fz14 {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &_fz16 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &_fz20 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    &_fz28 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    &_fz35 {
+        font-size: 35px;
+        line-height: 60px;
+    }
+    &_fz48 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+
+.line {
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 4px;
+    width: 70px;
+    background-color: $text-color;
+}

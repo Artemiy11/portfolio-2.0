@@ -1,0 +1,37 @@
+.duty {
+    min-height: 620px;
+    padding: 50px 0 57px 0;
+    .subheader_descr {
+        display: block;
+        width: 860px;
+        margin: 0 auto;
+        margin-top: 17px;
+    }
+    &__items {
+        z-index: -1;
+        display: flex;
+        margin-top: 37px;
+        &_item {
+            margin-top: 37px;
+            &_header {
+                margin-top: 22px;
+                text-align: center;
+                color: $main-color;
+                font-size: 18px;
+                font-weight: 700;
+            }
+            &_img {
+                display: block;
+                margin: 0 auto;
+            }
+            &_text {
+                margin-top: 5px;
+                text-align: center;
+                color: #3a3a3a;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 22px;
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+@media (max-width: 1200px) {
+    .about {
+        &__features {
+            column-gap: 6px;
+        }
+        &__feature {
+            .title {
+                font-size: 27px;
+                line-height: 48px;
+            }
+            width: 230px;
+        }
+        &__inf {
+            width: 100%;
+            grid-template-columns: 400px 520px;
+            column-gap: 40px;
+            .skills {
+                &_item {
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .about {
+        &__inf {
+            grid-template-columns: 300px 400px;
+            column-gap: 20px;
+            .me {
+                width: 300px;
+            }
+            .skills {
+                &_item {
+                    width: 280px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 40px 0 25px 0;
+        &__features {
+            margin-top: 55px;
+            grid-template: repeat(3, 1fr) / 1fr;
+            row-gap: 30px;
+        }
+        &__feature {
+            padding: 0 40px;
+            width: 100%;
+            .title {
+                font-size: 27px;
+                line-height: 48px;
+            }
+        }
+        &__inf {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 40px;
+            .me {
+                width: 100%;
+                padding: 0 40px;
+            }
+            .skills {
+                width: 100%;
+                align-items: center;
+                &_item {
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .about {
+        &__feature {
+            padding: 0px 10px;
+        }
+        &__inf {
+            .me {
+                padding: 0;
+            }
+            .skills {
+                height: 360px;
+                &_item {
+                    width: 200px;
+                    margin-left: 90px;
+                }
+                &_name {
+                    width: 90px;
+                    left: -90px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.footer {
+    height: 201px;
+    background-color: #25333c;
+    padding: 24px 0 28px 0;
+    .row {
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        margin-right: 43px;
+        margin-left: 17px;
+    }
+    &__text {
+        margin-right: 280px;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    &__contacts {
+        margin-right: 19px;
+    }
+    &__question {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    &__phone {
+        color: #ffffff;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #ffffff;
+    }
+    .button {
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 22.04px;
+    }
+    hr {
+        display: block;
+        margin-top: 20px;
+        color: #667076;
+        border: none;
+        background-color: #667076;
+        height: 1px;
+    }
+    &__links {
+        margin-top: 30px;
+    }
+    &__site {
+        margin-left: 17px;
+        color: #667076;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 17px;
+        &:hover {
+            color: #667076;
+        }
+    }
+    &__conf {
+        margin-left: 223px;
+        color: $main-color;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 17px;
+        &:hover {
+            color: $main-color;
+        }
+    }
+    &__sitedev {
+        margin-left: 440px;
+        color: #667076;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 17px;
+        &:hover {
+            color: #667076;
+        }
+    }
+    img {
+        margin-left: 10px;
+    }
+}

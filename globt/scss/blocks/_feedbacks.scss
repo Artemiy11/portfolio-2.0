@@ -1,0 +1,52 @@
+.feedbacks {
+    min-height: 470px;
+    padding: 50px 0 65px 0;
+    position: relative;
+    .slick-prev {
+        position: absolute;
+        top: 30px;
+        left: 31%;
+        width: 14px;
+        height: 47px;
+        border: none;
+        background-color: #ffffff;
+    }
+    .slick-next {
+        position: absolute;
+        top: 30px;
+        right: 33%;
+        width: 14px;
+        height: 47px;
+        border: none;
+        background-color: #ffffff;
+    }
+    &__slider {
+        width: 600px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        transform: scale(0.7);
+        background-color: rgba(255, 255, 255, 0.5);
+        &_avatar {
+            width: 114px;
+            height: 114px;
+            display: block;
+            margin: 0 auto;
+        }
+        &_text, &_name {
+            margin-top: 8px;
+            text-align: center;
+            color: #3a3a3a;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+        }
+        &_name {
+            margin-top: 14px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #3a3a3a;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.consultation {
+    min-height: 440px;
+    padding: 62px 0 79px 0;
+    background: url('../img/questions.jpg') center (center / cover) no-repeat;
+    &__block {
+        width: 896px;
+        &_header {
+            height: 68px;
+            padding-top: 10px;
+            background-color: #25333c;
+        }
+        &_main, &_descr {
+            text-align: center;
+            color: #ffffff;
+            font-size: 19px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        &_descr {
+            font-size: 14px;
+            font-weight: 400;
+        }
+        &_body {
+            height: 297px;
+            padding: 18px 40px 25px 40px;
+            background-color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+    }
+    &__form {
+        text-align: center;
+        input, textarea {
+            width: 268px;
+            height: 55px;
+            border-radius: 30px;
+            border: 1px solid #a5a5a5;
+            padding-left: 25px;
+        }
+        textarea {
+            margin-top: 8px;
+            width: 813px;
+            height: 91px;
+            margin-top: 5px;
+            border-radius: 10px;
+            resize: none;
+        }
+    }
+}
